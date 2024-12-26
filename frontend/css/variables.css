@@ -1,0 +1,77 @@
+:root {
+    /* Brown Color Palette */
+    --primary-color: #8B4513;     /* Saddle Brown - Deep, rich brown */
+    --secondary-color: #D2691E;   /* Chocolate - Warm, earthy tone */
+    --success-color: #6B4423;     /* Dark Brown - Muted success color */
+    --danger-color: #A0522D;      /* Sienna - Warm reddish-brown */
+    
+    /* Neutral Tones */
+    --background-color: #F5DEB3;  /* Wheat - Light, soft background */
+    --card-background: #FAFAF0;   /* Ivory - Soft, warm white */
+    
+    /* Text Colors */
+    --text-primary: #4A3728;      /* Deep Brown - Primary text */
+    --text-secondary: #6F4E37;    /* Coffee - Secondary text */
+    --white: #FFFFFF;             /* Pure white for contrast */
+    
+    /* Transition */
+    --transition: all 0.3s ease;
+}
+
+/* Alternative Earthy Palette Option 1 */
+:root {
+    --primary-color: #5D4037;     /* Deep Brown */
+    --secondary-color: #795548;   /* Brown */
+    --success-color: #3E2723;     /* Very Dark Brown */
+    --danger-color: #6D4C41;      /* Warm Brown */
+    --background-color: #EFEBE9;  /* Very Light Brown */
+    --card-background: #FAFAFA;   /* Almost White */
+    --text-primary: #3E2723;      /* Almost Black Brown */
+    --text-secondary: #5D4037;    /* Dark Brown */
+    --white: #FFFFFF;
+    --transition: all 0.3s ease;
+}
+
+/* Alternative Earthy Palette Option 2 */
+:root {
+    --primary-color: #6F4E37;     /* Coffee */
+    --secondary-color: #967259;   /* Soft Brown */
+    --success-color: #5D4037;     /* Dark Brown */
+    --danger-color: #8B4513;      /* Saddle Brown */
+    --background-color: #F5DEB3;  /* Wheat */
+    --card-background: #FAF0E6;   /* Linen */
+    --text-primary: #4A3728;      /* Very Dark Brown */
+    --text-secondary: #7F5A32;    /* Warm Brown */
+    --white: #FFFFFF;
+    --transition: all 0.3s ease;
+}
+
+/* Recommended Complementary Styling */
+body {
+    background-color: var(--background-color);
+    color: var(--text-primary);
+}
+
+.card {
+    background-color: var(--card-background);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Enhanced Color Accessibility */
+a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}

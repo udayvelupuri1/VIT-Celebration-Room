@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Celebration Room</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card payment-card">
+            <h2>Complete Your Payment</h2>
+            <div class="booking-details" id="bookingDetails"></div>
+            
+            <div class="payment-info">
+                <h3>Payment Details</h3>
+                <div class="upi-details">
+                    <img src="./frontend/assets/upi-qr.jpeg" alt="UPI QR Code" id="qrCode" class="qr-code">
+                    <p>UPI ID: <strong id="upiId">velupuriudaykumar-2@okaxis</strong></p>
+                    <button class="btn btn-secondary" onclick="copyUpiId()">Copy UPI ID</button>
+                </div>
+                
+                <div class="transaction-form">
+                    <div class="form-group">
+                        <label for="transactionId">Enter UPI Transaction ID</label>
+                        <input type="text" id="transactionId" class="form-control" placeholder="Enter your UPI transaction ID">
+                    </div>
+                    <button class="btn btn-primary" onclick="verifyPayment()">Confirm Payment</button>
+                </div>
+            </div>
+            
+            <div id="paymentStatus" class="payment-status" style="display: none;"></div>
+        </div>
+    </div>
+    
+    <script type="module" src="js/payment.js"></script>
+</body>
+</html>
