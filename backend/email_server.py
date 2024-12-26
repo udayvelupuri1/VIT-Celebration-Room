@@ -11,7 +11,7 @@ CORS(app)  # Enable CORS for all routes
 
 # Email configuration
 EMAIL_ADDRESS = "celebrationroomvit@gmail.com"
-EMAIL_PASSWORD = "igkf jtma gccj jami"  # App-specific password
+EMAIL_PASSWORD = "#### #### ####"  # App-specific password
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 
